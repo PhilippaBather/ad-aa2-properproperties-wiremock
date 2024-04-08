@@ -1,0 +1,52 @@
+[
+  {
+    "nameOrNum": "Brookside",
+    "flatNumber": "2A",
+    "street": "Oak Drive",
+    "city": "Madrid",
+    "region": "MADRID",
+    "postCode": "28223",
+    "country": "Spain",
+    "id": 1
+  },
+  {
+    "nameOrNum": "Casa del Campo",
+    "flatNumber": "4",
+    "street": "Calle Mayor",
+    "city": "Majadahonda",
+    "region": "MADRID",
+    "postCode": "28222",
+    "country": "Spain",
+    "id": 2
+  },
+  {
+    "nameOrNum": "Olivia Verde",
+    "flatNumber": "12C",
+    "street": "Moreno",
+    "city": "Majadahonda",
+    "region": "MADRID",
+    "postCode": "28222",
+    "country": "Spain",
+    "id": 3
+  },
+  {
+    "nameOrNum": "Casa del Playa",
+    "flatNumber": "3",
+    "street": "Calle Oasis",
+    "city": "Boadilla",
+    "region": "MADRID",
+    "postCode": "28223",
+    "country": "Spain",
+    "id": 4
+  },
+  {
+    "nameOrNum": "Gaviotas",
+    "flatNumber": "2A",
+    "street": "Calle Menor",
+    "city": "Majadahonda",
+    "region": "MADRID",
+    "postCode": "28221",
+    "country": "Spain",
+    "id": 5
+  }
+]
