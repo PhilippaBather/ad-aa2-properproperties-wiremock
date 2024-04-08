@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/sale/1"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/property/sale/getSaleById_200.json"
+  }
+}

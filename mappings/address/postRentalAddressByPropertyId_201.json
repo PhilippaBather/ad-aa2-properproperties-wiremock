@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/addresses/rental/address/2"
+  },
+  "response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/address/postAddressByPropertyId_201.json"
+  }
+}

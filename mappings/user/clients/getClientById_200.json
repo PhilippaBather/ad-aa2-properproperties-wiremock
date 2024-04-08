@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/users/clients/1"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/user/client/getClientById_200.json"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/addresses/4"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/address/getAddressById_200.json"
+  }
+}

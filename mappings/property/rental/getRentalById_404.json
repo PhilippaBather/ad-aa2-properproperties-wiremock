@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/rental/12"
+  },
+  "response" : {
+    "status" : 404,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/properties/rental/rentalNotFound_404.json"
+  }
+}

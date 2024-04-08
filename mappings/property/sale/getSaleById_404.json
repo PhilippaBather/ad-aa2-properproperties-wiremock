@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/sale/111"
+  },
+  "response" : {
+    "status" : 404,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/property/sale/saleNotFound.json"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/bedrooms/rental/3"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/property/rental/getRentalByBedrooms_200.json"
+  }
+}
