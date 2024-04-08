@@ -8,6 +8,6 @@
     "headers": {
       "Content-Type" : "application/json"
     },
-    "bodyFileName": "rentalNotFound_404.json"
+    "bodyFileName": "/property/rental/rentalNotFound_404.json"
   }
 }
