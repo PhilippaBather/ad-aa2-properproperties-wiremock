@@ -4,7 +4,7 @@ info:
   description: API para un inmobiliaria
   version: 1.0.0
 servers:
-  - url: 'https://api.example.com'
+  - url: 'https://localhost:3000'
 tags:
   - name: clients
     description: Operaciones para fetch, add, update, y delete clientes ('Clients')
@@ -267,17 +267,17 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ErrorResponse"
-  /users/proprietors/{proprietorId}:
+  /users/proprietors/secured/{proprietorId}:
     get:
       tags:
         - proprietors
       operationId: getProprietorById
-      summary: Devuelve un propietario por propietario ID
-      description: Devuelve un objeto de un propietario por propietario ID
+      summary: Devuelve un proprietario por su ID
+      description: Devuelve un proprietario por su ID
       parameters:
-        - name: proprietorId
-          in: path variable
-          description: La ID de propietario
+        - name: id
+          in: query
+          description: El nombre del usuario
           required: true
           schema:
             type: integer
@@ -459,7 +459,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RentalDTOOut"
+                type: array
+                items:
+                  $ref: "#/components/schemas/RentalDTOOut"
         '500':
           description: Internal Server Error
           content:
@@ -673,7 +675,9 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/SaleDTOOut"
+                type: array
+                items:
+                  $ref: "#/components/schemas/SaleDTOOut"
         '500':
           description: Internal Server Error
           content:
@@ -1441,6 +1445,11 @@ components:
           format: int64
           example: 1
           description: La ID de un inmueble de alquiler
+        propertyStatus:
+          type: string
+          enum: [ RENTAL, SALE ]
+          example: RENTAL
+          description: El estado de inmueble
       allOf:
         - $ref: "#/components/schemas/RentalProperty"
         - $ref: "#/components/schemas/Address"
@@ -1453,6 +1462,11 @@ components:
           format: int64
           example: 1
           description: La ID del inmueble para vender
+        propertyStatus:
+          type: string
+          enum: [ RENTAL, SALE ]
+          example: SALE
+          description: El estado de inmueble
         price:
           type: number
           example: 350.000
@@ -1481,11 +1495,6 @@ components:
     Property:
       type: object
       properties:
-        propertyStatus:
-          type: string
-          enum: [RENTAL, SALE]
-          example: RENTAL
-          description: El estado de inmueble
         propertyType:
           type: string
           enum: [ COMMERCIAL, FLAT, HOUSE ]
