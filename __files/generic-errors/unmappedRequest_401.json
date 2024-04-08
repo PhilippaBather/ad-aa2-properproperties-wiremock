@@ -1,0 +1,5 @@
+{
+  "code": "401",
+  "errorType": "Endpoint Unauthorised",
+  "message": "Endpoint not found or unauthorised"
+}
