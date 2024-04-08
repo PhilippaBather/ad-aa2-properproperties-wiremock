@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/addresses/891"
+  },
+  "response" : {
+    "status" : 404,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/address/addressNotFound_404.json"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/sale/500"
+  },
+  "response" : {
+    "status" : 500,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
+  }
+}

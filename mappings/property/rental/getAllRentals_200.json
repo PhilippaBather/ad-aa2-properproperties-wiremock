@@ -1,0 +1,15 @@
+{
+  "priority" : 1,
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/rental"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/property/rental/getAllRentals_200.json"
+  }
+}

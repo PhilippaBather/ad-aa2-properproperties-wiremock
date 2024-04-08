@@ -1,0 +1,5 @@
+{
+  "code": "404",
+  "errorType": "Client Not Found Error",
+  "message": "Client not found with id: 763"
+}

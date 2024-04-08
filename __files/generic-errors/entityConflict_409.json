@@ -1,0 +1,5 @@
+{
+  "code": "409",
+  "errorType": "Conflict",
+  "message": "Entity already exists"
+}

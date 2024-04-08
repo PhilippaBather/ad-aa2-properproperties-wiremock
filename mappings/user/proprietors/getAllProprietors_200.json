@@ -1,0 +1,15 @@
+{
+  "priority" : 1,
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/users/proprietors"
+  },
+  "response" : {
+    "status" : 200,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/user/proprietor/getAllProprietors_200.json"
+  }
+}

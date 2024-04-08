@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "/users/clients/763"
+  },
+  "response" : {
+    "status": 404,
+    "headers": {
+      "Content-Type" : "application/json"
+    },
+    "bodyFileName": "/user/client/clientNotFound_404.json"
+  }
+}

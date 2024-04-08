@@ -1,0 +1,8 @@
+{
+  "token": "ZWxmIiwic3ViIjoiam9lQmxvZ2dzIiwiZXhwIjoxNzA1NDU0MDEzLCJpYXQiOjE3MDU0NTA0MTMsInNjb3BlIjoiIn0.kFrqeScYjeYnS2mtrgVnnCP-SjwesvZKr-vKBBJ7i3hnpE",
+  "username": "joe_bloggs",
+  "roles": [
+    "ADMIN",
+    "USER"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "DELETE",
+    "url": "/users/proprietors/secured/23"
+  },
+  "response" : {
+    "status": 204,
+    "headers": {
+      "Content-Type" : "application/json"
+    }
+  }
+}

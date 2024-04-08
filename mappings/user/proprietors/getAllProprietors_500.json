@@ -1,0 +1,15 @@
+{
+  "priority" : 2,
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/users/proprietors"
+  },
+  "response" : {
+    "status" : 500,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "code": "404",
+  "errorType": "Sale Property Not Found Error",
+  "message": "Sale Property not found with id: 111"
+}
