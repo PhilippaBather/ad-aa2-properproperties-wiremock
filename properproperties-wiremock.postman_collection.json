@@ -1,0 +1,1741 @@
+{
+	"info": {
+		"_postman_id": "101db63f-d25b-4df6-bfbc-f9a20825e82a",
+		"name": "properproperties-wiremock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20376387"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "clients",
+					"item": [
+						{
+							"name": "getAllClients_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllClients_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clientz",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clientz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientById_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientById_404",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/763",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"763"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientById_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postClient_201",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postClient_401",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clientz",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clientz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postClient_409",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \"registrationDetails\": { \"email\": \"joe_bloggs@test.es\" } }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteClientById_204",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/77",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"77"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteClientById_404",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/763",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"763"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteClientById_500",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putClientById_200",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/3",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putClientById_404",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/763",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"763"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putClientById_422",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/clients/33",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"clients",
+										"33"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "proprietors",
+					"item": [
+						{
+							"name": "getAllProprietors_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllProprietors_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietorz",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietorz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorById_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorById_404",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/232",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"232"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorById_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorByUsername_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/joebloggs",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"joebloggs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorByUsername_404",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/joeblogs",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"joeblogs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getProprietorByUsername_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/joe500",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"joe500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProprietorById_204",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/23",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"23"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProprietorById_404",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/232",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"232"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProprietorById_500",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putProprietorById_200",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/2",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putProprietorById_404",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/232",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"232"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putProprietorById_422",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_users}}/proprietors/secured/32",
+									"host": [
+										"{{host}}{{port}}{{base_url_users}}"
+									],
+									"path": [
+										"proprietors",
+										"secured",
+										"32"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "properties",
+			"item": [
+				{
+					"name": "rental",
+					"item": [
+						{
+							"name": "getAllRentals_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllRentals_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rentalz",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rentalz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalById_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalById_404",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/12",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalById_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalCount_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/count/rental",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"count",
+										"rental"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalCount_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/count/rentalz",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"count",
+										"rentalz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalsByBedrooms_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/bedrooms/rental/3",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"bedrooms",
+										"rental",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalsByBedrooms_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/bedrooms/rentalz/401",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"bedrooms",
+										"rentalz",
+										"401"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalsByBedrooms_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/bedrooms/rental/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"bedrooms",
+										"rental",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalsParkingAndLift_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/facilities/rental",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"facilities",
+										"rental"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getRentalsParkingAndLift_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/facilities/rentalz",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"facilities",
+										"rentalz"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postRentalByProprietorId_201",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/2",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postRentalByProprietorId_404",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/232",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"232"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postRentalByProprietorId_422",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/432",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"432"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRentalById_204",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/2",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRentalById_404",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/222",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"222"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteRentalById_500",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putRentalByPropertyId_200",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/4",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putRentalByPropertyId_404",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/444",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"444"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putRentalById_422",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/rental/445",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"rental",
+										"445"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "sale",
+					"item": [
+						{
+							"name": "getAllSales_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllSales_401",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/salez",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"salez"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSaleById_200",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSaleById_404",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/111",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSaleById_500",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postSaleByProprietorId_201",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/3",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postSaleByProprietorId_404",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/232",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"232"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postSaleByProprietorId_422",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/229",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"229"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSaleById_204",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSaleById_404",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/111",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteSaleById_500",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/500",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"500"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putSaleById_200",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/1",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putSaleById_404",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/111",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"111"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "putSaleById_422",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{host}}{{port}}{{base_url_properties}}/sale/117",
+									"host": [
+										"{{host}}{{port}}{{base_url_properties}}"
+									],
+									"path": [
+										"sale",
+										"117"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "address",
+			"item": [
+				{
+					"name": "getAddresses_200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressess_401",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}/addressez",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"addressez"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressById_200",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/4",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressById_404",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/891",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"891"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAddressById_500",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/500",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postRentalAddressByPropertyId_201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/rental/address/2",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postRentalAddressByPropertyId_404",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/rental/address/12",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postRentalAddressByPropertyId_422",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/rental/address/123",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postSaleAddressByPropertyId_201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/sale/address/5",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postSaleAddressByPropertyId_404",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/sale/address/111",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postSaleAddressByPropertyId_422",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_addresses}}/sale/address/123",
+							"host": [
+								"{{host}}{{port}}{{base_url_addresses}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRentalAddressByPropertyId_204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/2",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRentalAddressByPropertyId_404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/12",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteRentalAddressByPropertyId_500",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/500",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSalelAddressByPropertyId_204",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/1",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSaleAddressByPropertyId_404",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/111",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteSaleAddressByPropertyId_500",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/500",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putRentalAddressByPropertyId_200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/1",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putRentalAddressByPropertyId_404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/12",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putRentalAddressByPropertyId_422",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/rental/address/123",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"rental",
+								"address",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putSaleAddressByPropertyId_200",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/1",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putSaleAddressByPropertyId_404",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/111",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putSaleAddressByPropertyId_422",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}{{base_url_properties}}/sale/address/123",
+							"host": [
+								"{{host}}{{port}}{{base_url_properties}}"
+							],
+							"path": [
+								"sale",
+								"address",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "authentication",
+			"item": [
+				{
+					"name": "register_201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}/register",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register_401",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}/registerz",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"registerz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register_409",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"registrationDetails\": { \"username\": \"joe_bloggs\" } }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{port}}/register",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token_201",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}/token",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token_401",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{port}}/tokenz",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"tokenz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "token_409",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"registrationDetails\": { \"username\": \"joe_bloggs\" } }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{port}}/token",
+							"host": [
+								"{{host}}{{port}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
