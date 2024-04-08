@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/users/clients"
+  },
+  "response" : {
+    "status": 201,
+    "headers": {
+      "Content-Type" : "application/json"
+    },
+    "bodyFileName": "/user/client/postClient_201.json"
+  }
+}

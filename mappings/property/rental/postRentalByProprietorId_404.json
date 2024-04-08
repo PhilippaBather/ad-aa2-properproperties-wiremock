@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/properties/rental/232"
+  },
+  "response" : {
+    "status": 404,
+    "headers": {
+      "Content-Type" : "application/json"
+    },
+    "bodyFileName": "/user/proprietor/proprietorNotFound_404.json"
+  }
+}

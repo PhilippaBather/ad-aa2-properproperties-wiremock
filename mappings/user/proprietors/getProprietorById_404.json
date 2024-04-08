@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/users/proprietors/232"
+  },
+  "response" : {
+    "status" : 404,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/user/proprietor/proprietorNotFound_404.json"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "code": "404",
+  "errorType": "Rental Property Not Found Error",
+  "message": "Rental Property not found with id: 12"
+}

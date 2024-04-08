@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/addresses/rental/address/12"
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/address/rentalNotFound_404.json"
+  }
+}

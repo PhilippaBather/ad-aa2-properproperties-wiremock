@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/register"
+  },
+  "response" : {
+    "status": 201,
+    "headers": {
+      "Content-Type" : "application/json"
+    },
+    "bodyFileName": "/authentication/register-201.json"
+  }
+}
