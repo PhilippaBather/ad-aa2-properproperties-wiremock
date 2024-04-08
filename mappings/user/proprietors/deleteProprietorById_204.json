@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "DELETE",
-    "url": "/users/proprietors/23"
+    "url": "/users/proprietors/secured/23"
   },
   "response" : {
     "status": 204,

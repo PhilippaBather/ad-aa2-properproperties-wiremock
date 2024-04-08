@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "PUT",
-    "url": "/users/proprietors/2"
+    "url": "/users/proprietors/secured/2"
   },
   "response": {
     "status": 200,
