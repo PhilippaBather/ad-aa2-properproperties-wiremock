@@ -1,0 +1,10 @@
+{
+  "type": "VALIDATION",
+  "errors": [
+    {
+      "constraint": "Email",
+      "detail": "email: A valid email is required.",
+      "mapping": "clientDTOIn/email"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "request": {
     "method": "PUT",
-    "url": "/properties/rental/address/12"
+    "url": "/users/clients/500"
   },
   "response": {
-    "status": 404,
+    "status": 500,
     "headers": {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/rental/rentalNotFound_404.json"
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
   }
 }

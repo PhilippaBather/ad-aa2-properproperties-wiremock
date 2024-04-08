@@ -1,14 +1,14 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern" : "/properties/rental/12"
+    "urlPattern" : "/addressez"
   },
   "response" : {
-    "status" : 404,
+    "status" : 401,
     "headers" :
     {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/rental/rentalNotFound_404.json"
+    "bodyFileName": "/generic-errors/unmappedRequest_401.json"
   }
 }

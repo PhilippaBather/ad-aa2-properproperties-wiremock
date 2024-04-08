@@ -9,6 +9,6 @@
     {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/sale/saleNotFound.json"
+    "bodyFileName": "/property/sale/saleNotFound_404.json"
   }
 }

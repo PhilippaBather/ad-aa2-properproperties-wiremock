@@ -1,13 +1,13 @@
 {
   "request": {
     "method": "POST",
-    "url": "/addresses/sale/address/111"
+    "url": "/addresses/sale/address/123"
   },
   "response": {
-    "status": 404,
+    "status": 422,
     "headers": {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/sale/saleNotFound_404.json"
+    "bodyFileName": "/generic-errors/unprocessableEntity_422.json"
   }
 }

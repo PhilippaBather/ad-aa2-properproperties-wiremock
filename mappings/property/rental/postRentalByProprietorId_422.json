@@ -1,13 +1,13 @@
 {
   "request": {
     "method": "POST",
-    "url": "/users/clients"
+    "url": "/properties/rental/432"
   },
   "response" : {
-    "status": 201,
+    "status": 422,
     "headers": {
       "Content-Type" : "application/json"
     },
-    "bodyFileName": "/user/client/postClient_201.json"
+    "bodyFileName": "/generic-errors/unprocessableEntity_422.json"
   }
 }

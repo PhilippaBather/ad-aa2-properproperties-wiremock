@@ -1,13 +1,13 @@
 {
   "request": {
     "method": "DELETE",
-    "url": "/users/proprietors/secured/232"
+    "url": "/properties/rental/address/500"
   },
   "response" : {
-    "status": 404,
+    "status": 500,
     "headers": {
       "Content-Type" : "application/json"
     },
-    "bodyFileName": "/user/proprietor/proprietorNotFound_404.json"
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
   }
 }

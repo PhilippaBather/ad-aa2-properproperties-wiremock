@@ -1,15 +1,15 @@
 {
-  "priority" : 1,
+  "priority" : 2,
   "request": {
     "method": "GET",
     "urlPattern" : "/addresses"
   },
   "response" : {
-    "status" : 200,
+    "status" : 500,
     "headers" :
     {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/address/getAddresses_200.json"
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
   }
 }

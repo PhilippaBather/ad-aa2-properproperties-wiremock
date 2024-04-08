@@ -1,13 +1,13 @@
 {
   "request": {
     "method": "PUT",
-    "url": "/properties/rental/address/12"
+    "url": "/properties/sale/address/123"
   },
   "response": {
-    "status": 404,
+    "status": 422,
     "headers": {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/rental/rentalNotFound_404.json"
+    "bodyFileName": "/generic-errors/unprocessableEntity_422.json"
   }
 }

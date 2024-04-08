@@ -1,0 +1,48 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/users/clients"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/user/client/postClient_201.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/users/clientz"
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/generic-errors/unmappedRequest_401.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/users/client",
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.registrationDetails[?(@.email == 'joe_bloggs@test.es')]"
+          }
+        ]
+      },
+      "response": {
+        "status": 409,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/generic-errors/entityConflict_409.json"
+      }
+    }
+  ]
+}

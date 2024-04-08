@@ -1,14 +1,14 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern" : "/properties/rental/12"
+    "urlPattern" : "/properties/sale/500"
   },
   "response" : {
-    "status" : 404,
+    "status" : 500,
     "headers" :
     {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/property/rental/rentalNotFound_404.json"
+    "bodyFileName": "/generic-errors/internalServerError_500.json"
   }
 }
