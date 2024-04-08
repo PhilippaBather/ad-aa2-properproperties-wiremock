@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/users/proprietors/secured/joeblogs"
+  },
+  "response" : {
+    "status" : 404,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/user/proprietor/proprietorUsernameNotFound_404.json"
+  }
+}

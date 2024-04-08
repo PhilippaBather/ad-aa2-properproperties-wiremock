@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern" : "/users/proprietors/500"
+    "urlPattern" : "/users/proprietors/secured/500"
   },
   "response" : {
     "status" : 500,

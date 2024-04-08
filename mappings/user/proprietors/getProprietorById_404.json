@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPattern" : "/users/proprietors/232"
+    "urlPattern" : "/users/proprietors/secured/232"
   },
   "response" : {
     "status" : 404,
@@ -9,6 +9,6 @@
     {
       "Content-Type": "application/json"
     },
-    "bodyFileName": "/user/proprietor/proprietorNotFound_404.json"
+    "bodyFileName": "/user/proprietor/proprietorIdNotFound_404.json"
   }
 }
