@@ -19,7 +19,7 @@
         "url": "/users/clientz"
       },
       "response": {
-        "status": 201,
+        "status": 401,
         "headers": {
           "Content-Type": "application/json"
         },
@@ -29,7 +29,7 @@
     {
       "request": {
         "method": "POST",
-        "url": "/users/client",
+        "url": "/users/clients",
         "bodyPatterns": [
           {
             "matchesJsonPath": "$.registrationDetails[?(@.email == 'joe_bloggs@test.es')]"
