@@ -1,0 +1,30 @@
+{
+  "mapping" : [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "/users/clients/3"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/user/client/putClientById_200.json"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "/users/clients/763"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/user/client/clientNotFound_404.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "POST",
+        "url": "/register"
+      },
+      "response" : {
+        "status": 201,
+        "headers": {
+          "Content-Type" : "application/json"
+        },
+        "bodyFileName": "/authentication/register_201.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/register",
+        "bodyPatterns": [
+          {
+            "matchesJsonPath": "$.registrationDetails[?(@.username == 'joe_bloggs')]"
+          }
+        ]
+      },
+      "response": {
+        "status": 409,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "/generic-errors/entityConflict_409.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/registerz"
+      },
+      "response" : {
+        "status": 401,
+        "headers": {
+          "Content-Type" : "application/json"
+        },
+        "bodyFileName": "/generic-errors/unmappedRequest_401.json"
+      }
+    }
+  ]
+}
