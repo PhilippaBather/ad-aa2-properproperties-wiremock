@@ -16,6 +16,19 @@
     {
       "request": {
         "method": "POST",
+        "url": "/registerz"
+      },
+      "response" : {
+        "status": 401,
+        "headers": {
+          "Content-Type" : "application/json"
+        },
+        "bodyFileName": "/generic-errors/unmappedRequest_401.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
         "url": "/register",
         "bodyPatterns": [
           {
@@ -29,19 +42,6 @@
           "Content-Type": "application/json"
         },
         "bodyFileName": "/generic-errors/entityConflict_409.json"
-      }
-    },
-    {
-      "request": {
-        "method": "POST",
-        "url": "/registerz"
-      },
-      "response" : {
-        "status": 401,
-        "headers": {
-          "Content-Type" : "application/json"
-        },
-        "bodyFileName": "/generic-errors/unmappedRequest_401.json"
       }
     }
   ]
