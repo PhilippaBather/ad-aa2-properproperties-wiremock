@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern" : "/properties/bedrooms/rentalz/401"
+  },
+  "response" : {
+    "status" : 401,
+    "headers" :
+    {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/generic-errors/unmappedRequest_401.json"
+  }
+}

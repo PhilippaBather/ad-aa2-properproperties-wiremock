@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/properties/rental/445"
+  },
+  "response": {
+    "status": 422,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyFileName": "/generic-errors/unprocessableEntity_422.json"
+  }
+}
