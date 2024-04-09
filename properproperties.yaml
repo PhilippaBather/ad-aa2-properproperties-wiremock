@@ -23,7 +23,7 @@ paths:
     get:
       tags:
         - clients
-      operationId: getAllClients_200.json
+      operationId: getAllClients
       summary: Devuelve una lista de todos los clientes o todos los clientes según un parámetro especificado
       description: Devuelve una lista de todos los clientes y sus detalles según un parámetro especificado
       parameters:
@@ -59,7 +59,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     post:
       tags:
         - clients
@@ -85,25 +85,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /users/clients/{clientId}:
     get:
       tags:
@@ -131,13 +131,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
        - clients
@@ -171,31 +171,31 @@ paths:
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
          '404':
            description: Client Not Found
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
          '406':
            description: Not Acceptable
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
          '422':
            description: Unprocessable Entity
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/UnprocessableEntityResponse"
          '500':
            description: Internal Server Error
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - clients
@@ -218,13 +218,13 @@ paths:
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
          '500':
            description: Internal Server Error
            content:
              application/json:
                schema:
-                 $ref: "#/components/schemas/ErrorResponse"
+                 $ref: "#/components/schemas/GenericErrorResponse"
   /users/proprietors:
     get:
       tags:
@@ -266,7 +266,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /users/proprietors/secured/{proprietorId}:
     get:
       tags:
@@ -294,13 +294,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
         - proprietors
@@ -334,7 +334,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '404':
@@ -342,25 +342,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - proprietors
@@ -383,7 +383,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '500':
@@ -391,7 +391,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /users/proprietors/secured/{username}:
     get:
       tags:
@@ -418,13 +418,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/rental:
     get:
       tags:
@@ -467,7 +467,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/rental/{proprietorId}:
     post:
       tags:
@@ -494,7 +494,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '406':
@@ -502,19 +502,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/rental/{propertyId}:
     get:
       tags:
@@ -544,13 +544,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
         - rental
@@ -584,7 +584,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '404':
@@ -592,25 +592,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - rental
@@ -635,13 +635,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/sale:
     get:
       tags:
@@ -683,7 +683,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/sale/{proprietorId}:
     post:
       tags:
@@ -710,7 +710,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '406':
@@ -718,19 +718,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/sale/{propertyId}:
     get:
       tags:
@@ -760,13 +760,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
         - sale
@@ -800,7 +800,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '404':
@@ -808,25 +808,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - sale
@@ -851,13 +851,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /addresses:
     get:
       tags:
@@ -898,13 +898,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /addresses/{addressId}:
     get:
       tags:
@@ -932,13 +932,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/rental/addresss/{propertyId}:
     post:
       tags:
@@ -965,7 +965,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '406':
@@ -973,19 +973,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
         - addresses
@@ -1019,7 +1019,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '404':
@@ -1027,25 +1027,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - addresses
@@ -1067,7 +1067,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '500':
@@ -1075,7 +1075,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/sale/address/{propertyId}:
     post:
       tags:
@@ -1102,7 +1102,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '406':
@@ -1110,19 +1110,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     put:
       tags:
         - addresses
@@ -1156,7 +1156,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '404':
@@ -1164,25 +1164,25 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '406':
           description: Not Acceptable
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '422':
           description: Unprocessable Entity
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/UnprocessableEntityResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
     delete:
       tags:
         - addresses
@@ -1204,7 +1204,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '401':
           description: Unauthorised - No content
         '500':
@@ -1212,7 +1212,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/count/rental:
     get:
       tags:
@@ -1234,7 +1234,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/bedrooms/rental/{bedrooms}:
     get:
       tags:
@@ -1262,7 +1262,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /properties/facilities/rental:
     get:
       tags:
@@ -1282,7 +1282,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /register:
     post:
       tags:
@@ -1302,13 +1302,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
         '500':
           description: Internal Server Error
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ErrorResponse"
+                $ref: "#/components/schemas/GenericErrorResponse"
   /token:
     post:
       tags:
@@ -1622,7 +1622,7 @@ components:
           type: array
           example: [ADMIN, USER]
           description: una lista de roles
-    ErrorResponse:
+    GenericErrorResponse:
       type: object
       properties:
         code:
@@ -1637,6 +1637,32 @@ components:
           type: string
           example: "Client not found with id: 55"
           description: Una descripción del error
+    UnprocessableEntityResponse:
+      type: object
+      properties:
+        type:
+          type: string
+          example: "VALIDATION"
+          description: El tipo de error
+        errors:
+          type: array
+          items:
+            $ref: "#/components/schemas/UnprocessableEntity"
+    UnprocessableEntity:
+      type: object
+      properties:
+        constraint:
+          type: string
+          example: "Not Blank"
+          description: La restricción pendiente
+        detail:
+          type: string
+          example: "model: Model is required."
+          description: Detalles del error
+        mapping:
+          type: string
+          example: "guitarDTOIn/model"
+          description: Identifica el attributo que ha causado el error.
 
 
 
